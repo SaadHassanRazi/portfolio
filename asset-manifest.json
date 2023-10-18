@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.16b9a5c6.css",
+    "main.js": "/portfolio/static/js/main.f9af7629.js",
+    "static/js/787.85301578.chunk.js": "/portfolio/static/js/787.85301578.chunk.js",
+    "static/media/snapchat-mod-fourth.jpg": "/portfolio/static/media/snapchat-mod-fourth.e88b51b63daf3d4da963.jpg",
+    "static/media/taclog-moving.jpg": "/portfolio/static/media/taclog-moving.3f878b5c38ad707b7005.jpg",
+    "static/media/snapchat-mod-second.jpg": "/portfolio/static/media/snapchat-mod-second.55ca7b846a1b9fbc2167.jpg",
+    "static/media/snapchat-mod-apk.jpg": "/portfolio/static/media/snapchat-mod-apk.4108954b6731d0eed898.jpg",
+    "static/media/snapchat-mod-third.jpg": "/portfolio/static/media/snapchat-mod-third.8a8b8815d1a72f3f0385.jpg",
+    "static/media/ibenefits.jpg": "/portfolio/static/media/ibenefits.34d76f13d2b5eddd1dcf.jpg",
+    "static/media/saad.jpg": "/portfolio/static/media/saad.6ae993d74fd007aabb9b.jpg",
+    "static/media/undraw_about_me_re_82bv.svg": "/portfolio/static/media/undraw_about_me_re_82bv.d1f5f038d736e9806cb8b025de1884ab.svg",
+    "static/media/undraw_resume_re_hkth.svg": "/portfolio/static/media/undraw_resume_re_hkth.8001e5910ff084cc5167959bbd3dc090.svg",
+    "index.html": "/portfolio/index.html",
+    "main.16b9a5c6.css.map": "/portfolio/static/css/main.16b9a5c6.css.map",
+    "main.f9af7629.js.map": "/portfolio/static/js/main.f9af7629.js.map",
+    "787.85301578.chunk.js.map": "/portfolio/static/js/787.85301578.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16b9a5c6.css",
+    "static/js/main.f9af7629.js"
+  ]
+}
