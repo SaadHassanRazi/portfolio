@@ -2,7 +2,20 @@ import React from "react";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import SkillsRow from "../Skills/skillsRow";
 const Contact =()=>{
+    const contactRow = [
+            {title:'  Phone  ',icon: <i class="bi bi-telephone mx-auto h1 pt-1"></i>,para:' +92 0309-5722806'},
+            {title:'  Email    ',icon: <i class="bi bi-envelope h1 mx-auto h1 pt-1"></i>,para:'  saadhassanrazi@gmail.com'},
+            {title:'    Linkedin     ',icon:  <i class="bi bi-linkedin mx-auto h1 pt-1"></i>,link:'https://linkedin.com/in/saad-hassan-razi-479868276'},
+            {title:' Facebook ',icon: <i class="bi bi-facebook mx-auto h1 pt-1"></i>,link:'https://www.facebook.com/saad.razi.7374/'},
+            {title:'  Instagram  ',icon:  <i class="bi bi-instagram mx-auto pt-1 h1"></i>,link:'https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsh.saadrazi%3Ffbclid%3DIwAR2VZ24jNIoeScFsE6BIQIjdst1_-mhybsejOFm6db1clq5UVtT9CcTnieE&h=AT3bLtS-4wmasReJLfO6f_f39yNwQiOLpeUvRYHldcrHHWTpMWPwQsCE35xDvnhXTRF-j0N-IEbjZJR3w8aHfJfpzhRb8SBSJNdsfPX05_IuM8zWeaToxIvuKGtHABMKdDeT'},
+            
+    ]
+
+    const linkedinHandler = ()=>{
+        alert('clicked')
+    }
  
     return(
         <>
@@ -13,41 +26,15 @@ const Contact =()=>{
                 
                 <p className="text-center text-lg-start">Contact me through these provided channels</p>
                 </Col>
-                <Col className="rounded text-white skillCol" lg>
-                    <div className="d-flex">
-                    <i class="bi bi-telephone mx-auto h1 pt-1"></i>
-                </div>
-                <h5 className="text-center">
-                    Phone    
-                </h5>
-                <p className="text-center">
-                  +92 0309-5722806
-                </p>
-                </Col>
-                <Col className="rounded text-white skillCol" lg>
-                    
-                <div className='d-flex'>
-                <i class="bi bi-envelope h1 mx-auto h1 pt-1"></i>
-                </div>
-                <h5 className="text-center">
-                    Email   
-                </h5>
-                <p className="text-center">
-                  saadhassanrazi@gmail.com
-                </p>
-                </Col>
-               
-                <Col className="rounded text-white skillCol" lg>
-                <a href="https://www.linkedin.com/in/saad-hassan-razi-479868276/" className="nav-link">
-                <div className="d-flex">
-                <i class="bi bi-linkedin mx-auto h1 pt-1"></i>
-                </div>
-                <h5 className="text-center">
-                    Linkedin    
-                </h5>
+              <SkillsRow title={contactRow[0].title} icon={contactRow[0].icon} para={contactRow[0].para}/>
+              <SkillsRow title={contactRow[1].title} icon={contactRow[1].icon} para={contactRow[1].para}/>
               
-                </a>
-                </Col>
+              <SkillsRow title={contactRow[2].title} icon={contactRow[2].icon} link ={contactRow[2].link}/>
+            
+           
+
+             
+              
             </Row>
             <Row className="gap-2 py-2" >
             <Col>
@@ -56,32 +43,8 @@ const Contact =()=>{
                 <p className="text-center text-lg-start">Contact me through social media</p>
                 </Col>
               
-                <Col className="rounded text-white skillCol" lg>
-                  <a className="nav-link" href="https://www.facebook.com/saad.razi.7374/">
-                  <div className="d-flex">
-                    <i class="bi bi-facebook mx-auto h1 pt-1"></i>
-                </div>
-                <h5 className="text-center">
-                    Facebook    
-                </h5>
-               
-                  </a>
-                 
-                </Col>
-                <Col className="rounded text-white skillCol" lg>
-                  <a className="nav-link" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsh.saadrazi%3Ffbclid%3DIwAR2VZ24jNIoeScFsE6BIQIjdst1_-mhybsejOFm6db1clq5UVtT9CcTnieE&h=AT3bLtS-4wmasReJLfO6f_f39yNwQiOLpeUvRYHldcrHHWTpMWPwQsCE35xDvnhXTRF-j0N-IEbjZJR3w8aHfJfpzhRb8SBSJNdsfPX05_IuM8zWeaToxIvuKGtHABMKdDeT">
-                  <div className='d-flex'>
-                  <i class="bi bi-instagram mx-auto pt-1 h1"></i>
-                </div>
-                <h5 className="text-center">
-                    Instagram
-                </h5>
-                <p className="text-center">
-                  
-                </p>
-                    </a>  
-             
-                </Col>
+                <SkillsRow title={contactRow[3].title} icon={contactRow[3].icon} link ={contactRow[3].link}/>
+                <SkillsRow title={contactRow[4].title} icon={contactRow[4].icon} link ={contactRow[4].link}/>
                
             
             </Row>

@@ -4,20 +4,20 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/esm/Container";
 import Button from 'react-bootstrap/Button';
 import ResumeUndraw from '../img/undraw/undraw_resume_re_hkth.svg'
-import Cv from '../img/cv/Saad-Hassan-Razi-goodcv.com-161023.121034_page-0001.jpg'
+
 
 const Resume = () =>{
     const handleDownload = () => {
-        // Get the image URL
-        const imageUrl = {Cv}; // Replace with your image URL or import the image
+        const link = document.createElement('a');
+        link.href = '../img/cv/Saad-Hassan-Razi-goodcv.com-161023.121034_page-0001.jpg'; // Replace with the actual image URL
+        link.download = 'image.jpg'; // Specify the desired download file name
     
-        // Create an anchor element
-        const a = document.createElement('a');
-        a.href = imageUrl;
-        a.download = 'Saad-Hassan-Razi-goodcv.com-161023.121034_page-0001.jpg'; // Specify the desired file name
+        // Trigger a click event on the anchor element
+        document.body.appendChild(link);
+        link.click();
     
-        // Trigger a click event on the anchor element to initiate the download
-        a.click();
+        // Clean up the anchor element
+        document.body.removeChild(link);
       };
     
     return(
@@ -25,15 +25,15 @@ const Resume = () =>{
         <Container className="text-white" id="resume">
            
             <Row>
-                <Col className="my-auto" >
+                <Col className="my-auto text-center text-lg-start py-3" lg>
                 <h2>
                     Download My Resume From Here
                 </h2>
                 </Col>
-                <Col className="my-auto">
-                <Button className='' onClick={handleDownload} variant='primary'>Download Resume</Button>
+                <Col className="my-auto" lg>
+                <Button className='d-flex mx-auto my-3' onClick={handleDownload} variant='primary'>Download Resume</Button>
                 </Col>
-                <Col>
+                <Col lg>
                 <img className="img-fluid" src={ResumeUndraw} alt="Resume Img"/>
                 </Col>
             </Row>

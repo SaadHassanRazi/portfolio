@@ -64,7 +64,7 @@ const Project = ()=>{
             </h1>
             <Row>
                
-            <Col>
+            <Col lg>
             <div className="mx-auto py-2">
                 <img src={SnapMod} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
                 </div>
@@ -72,7 +72,7 @@ const Project = ()=>{
                     Show
                 </Button>
                 </Col>
-                <Col>
+                <Col lg>
                 <div className="mx-auto py-2">
                 <img src={Taclog} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
                 </div>
@@ -80,7 +80,7 @@ const Project = ()=>{
                     Show
                 </Button>
                 </Col>
-                <Col>
+                <Col lg>
                 <div className="mx-auto py-2">
                 <img src={IBenefits} className="img-fluid rounded  d-flex mx-auto w-75" alt="" />
                 </div>
