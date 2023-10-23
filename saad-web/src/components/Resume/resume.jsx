@@ -4,13 +4,13 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/esm/Container";
 import Button from 'react-bootstrap/Button';
 import ResumeUndraw from '../img/undraw/undraw_resume_re_hkth.svg'
-const CV = 'https://saadhassanrazi.github.io/Saad-Hassan-Razi-goodcv.com-161023.121034_page-0001.jpg'
+const CV = 'https://saadhassanrazi.github.io/portfolio/Saad-Hassan-Razi-goodcv.com-161023.121034_page-0001.jpg'
 
 const Resume = () =>{
     const handleDownload = (url) => {
         const link = document.createElement('a');
         link.href = url; // Replace with the actual image URL
-        link.download = 'image.jpg'; // Specify the desired download file name
+        link.download = 'SaadHassanRazi-Cv.jpg'; // Specify the desired download file name
     
         // Trigger a click event on the anchor element
         document.body.appendChild(link);
