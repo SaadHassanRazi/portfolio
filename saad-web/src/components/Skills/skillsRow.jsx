@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 const SkillsRow =(props)=>{
     return(
         <>
-            <Col className="rounded text-white skillCol" lg>
+            <Col className="rounded text-white skillCol w-50 mx-auto" lg >
                 <a href={props.link} className="nav-link">
                     <div className="d-flex">
                 {props.icon}

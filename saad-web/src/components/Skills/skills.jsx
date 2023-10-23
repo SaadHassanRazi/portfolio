@@ -40,7 +40,7 @@ const Skills = () => {
     <>
       <Container className="py-3" id="skills">
         <Row className="gap-2 py-2">
-          <Col>
+          <Col lg >
             <h1 className="text-center text-lg-start">Skills</h1>
 
             <p className="text-center text-lg-start">

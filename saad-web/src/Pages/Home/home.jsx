@@ -29,11 +29,12 @@ const Home = ()=>{
         <About/>
         </div>
         <Skills/>
-        <div style={{background:' linear-gradient(124deg, #f5540a  70%, #000000 30%)'}}>
+        <div style={{background:' linear-gradient(124deg, #000000  30%,#f5540a  70%)'}}>
+        
         <Resume/>
        
-        </div>
-        <div style={{background:' linear-gradient(124deg, #000000  30%,#f5540a  70%)'}}>
+       
+        
         <Project/>
         </div>
         <Contact/>

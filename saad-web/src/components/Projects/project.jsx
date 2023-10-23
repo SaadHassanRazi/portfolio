@@ -17,9 +17,15 @@ const Project = ()=>{
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleClose1 = () => setShow(false);
+  const handleShow1 = () => setShow(true);
+
+  const handleClose2 = () => setShow(false);
+  const handleShow2 = () => setShow(true);
     return(
         <>
-        
+        {/*Modal */}
       <Modal className="modal modal-lg" show={show} onHide={handleClose}>
         <Modal.Header style={{background:'linear-gradient(124deg, #f5540a  70%, white 30%)'}} closeButton>
           <Modal.Title className="text-white">Snapchat-mod-apk</Modal.Title>
@@ -58,8 +64,85 @@ const Project = ()=>{
           </Button>
         </Modal.Footer>
       </Modal>
+      {/*Modal 2 */}
+      <Modal className="modal modal-lg" show={show} onHide={handleClose1}>
+        <Modal.Header style={{background:'linear-gradient(124deg, #f5540a  70%, white 30%)'}} closeButton>
+          <Modal.Title className="text-white">Snapchat-mod-apk</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="bg-dark">
+        <Carousel fade>
+      <Carousel.Item>
+      <img src={SnapMod} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
+        <Carousel.Caption>
+        
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={SnapSecondSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
+        <Carousel.Caption>
+        
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={SnapThirdSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
+        <Carousel.Caption>
+         
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={SnapFourthSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
+        <Carousel.Caption>
+         
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+        </Modal.Body>
+        <Modal.Footer className="">
+          <Button variant="secondary" onClick={handleClose1}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      <Modal className="modal modal-lg" show={show} onHide={handleClose2}>
+        <Modal.Header style={{background:'linear-gradient(124deg, #f5540a  70%, white 30%)'}} closeButton>
+          <Modal.Title className="text-white">Snapchat-mod-apk</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="bg-dark">
+        <Carousel fade>
+      <Carousel.Item>
+      <img src={SnapMod} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
+        <Carousel.Caption>
+        
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={SnapSecondSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
+        <Carousel.Caption>
+        
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={SnapThirdSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
+        <Carousel.Caption>
+         
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={SnapFourthSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
+        <Carousel.Caption>
+         
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+        </Modal.Body>
+        <Modal.Footer className="">
+          <Button variant="secondary" onClick={handleClose2}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
         <Container className="py-5 text-white" id="projects">
-            <h1 className="text-center">
+            <h1 className="text-center pb-3">
                 My Projects
             </h1>
             <Row>
@@ -76,7 +159,7 @@ const Project = ()=>{
                 <div className="mx-auto py-2">
                 <img src={Taclog} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
                 </div>
-                <Button className='d-flex mx-auto' variant="primary">
+                <Button className='d-flex mx-auto' onClick={handleShow1} variant="primary">
                     Show
                 </Button>
                 </Col>
@@ -84,7 +167,7 @@ const Project = ()=>{
                 <div className="mx-auto py-2">
                 <img src={IBenefits} className="img-fluid rounded  d-flex mx-auto w-75" alt="" />
                 </div>
-                <Button className='d-flex mx-auto' variant="primary">
+                <Button className='d-flex mx-auto' onClick={handleShow2} variant="primary">
                     Show
                 </Button>
                 </Col>

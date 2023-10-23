@@ -12,16 +12,12 @@ const Contact =()=>{
             {title:'  Instagram  ',icon:  <i class="bi bi-instagram mx-auto pt-1 h1"></i>,link:'https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsh.saadrazi%3Ffbclid%3DIwAR2VZ24jNIoeScFsE6BIQIjdst1_-mhybsejOFm6db1clq5UVtT9CcTnieE&h=AT3bLtS-4wmasReJLfO6f_f39yNwQiOLpeUvRYHldcrHHWTpMWPwQsCE35xDvnhXTRF-j0N-IEbjZJR3w8aHfJfpzhRb8SBSJNdsfPX05_IuM8zWeaToxIvuKGtHABMKdDeT'},
             
     ]
-
-    const linkedinHandler = ()=>{
-        alert('clicked')
-    }
  
     return(
         <>
-        <Container id="contact">
+        <Container id="contact" className="py-5">
         <Row className="gap-2 py-2" >
-                <Col>
+                <Col lg>
                 <h1 className="text-center text-lg-start">Contact Me</h1>
                 
                 <p className="text-center text-lg-start">Contact me through these provided channels</p>
@@ -37,7 +33,7 @@ const Contact =()=>{
               
             </Row>
             <Row className="gap-2 py-2" >
-            <Col>
+            <Col lg>
                 <h1 className="text-center text-lg-start">Social Media</h1>
                 
                 <p className="text-center text-lg-start">Contact me through social media</p>
