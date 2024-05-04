@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     // Add a scroll event listener to track the user's scroll position
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
       // Clean up the event listener when the component is unmounted
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -25,12 +25,12 @@ function ScrollToTopButton() {
     // Scroll to the top of the page when the button is clicked
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Add smooth scrolling effect
+      behavior: "smooth", // Add smooth scrolling effect
     });
   };
 
   return (
-    <div className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}>
+    <div className={`scroll-to-top-button ${isVisible ? "visible" : ""}`}>
       <button onClick={scrollToTop}>Scroll to Top</button>
     </div>
   );
