@@ -1,9 +1,0 @@
-.skillCol{
-    background-color: #f5540a;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.skillCol:hover{
-    background-color: rgb(255, 48, 83);
-}
