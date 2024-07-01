@@ -14,13 +14,13 @@ const Header = () => {
         <Container id="brand">
           <div className="py-3"></div>
           <Row className="mx-auto py-5">
-            <Col className="my-auto text-dark text-center text-lg-start" lg>
+            <Col className="my-auto text-white text-center text-lg-start" lg>
               <h1 className="">Saad Hassan Razi</h1>
               <p className="">Front end Web Developer</p>
               <Button
                 variant="outline-danger"
                 href="#contact"
-                className="text-dark"
+                className="text-white"
                 type="button"
               >
                 Hire Me
