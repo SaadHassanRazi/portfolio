@@ -71,7 +71,12 @@ const Skills = () => {
           <Row key={rowIndex} className="gap-2">
             {chunk.map((item, itemIndex) => (
               <Col lg key={itemIndex}>
-                <SkillsRow title={item.title} icon={item.icon} />
+                <SkillsRow
+                  title={item.title}
+                  background={"#f5540a"}
+                  width={"200px"}
+                  icon={item.icon}
+                />
               </Col>
             ))}
           </Row>

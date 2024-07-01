@@ -37,6 +37,9 @@ const Contact = () => {
     },
   ];
 
+  const contact = contactRow.slice(0, 2);
+  const socialMedia = contactRow.slice(2, 5);
+  const git = contactRow.slice(-1);
   return (
     <>
       <Container id="contact" className="py-5">
@@ -48,22 +51,22 @@ const Contact = () => {
               Contact me through these provided channels
             </p>
           </Col>
-          <SkillsRow
-            title={contactRow[0].title}
-            icon={contactRow[0].icon}
-            para={contactRow[0].para}
-          />
-          <SkillsRow
-            title={contactRow[1].title}
-            icon={contactRow[1].icon}
-            para={contactRow[1].para}
-          />
 
-          <SkillsRow
-            title={contactRow[2].title}
-            icon={contactRow[2].icon}
-            link={contactRow[2].link}
-          />
+          {contact.map((item) => {
+            return (
+              <>
+                <Col>
+                  <SkillsRow
+                    title={item.title}
+                    icon={item.icon}
+                    para={item.para}
+                    background={"#f5540a"}
+                    width={"260px"}
+                  />
+                </Col>
+              </>
+            );
+          })}
         </Row>
         <Row className="gap-2 py-2">
           <Col lg>
@@ -74,27 +77,44 @@ const Contact = () => {
             </p>
           </Col>
 
-          <SkillsRow
-            title={contactRow[3].title}
-            icon={contactRow[3].icon}
-            link={contactRow[3].link}
-          />
-          <SkillsRow
-            title={contactRow[4].title}
-            icon={contactRow[4].icon}
-            link={contactRow[4].link}
-          />
+          {socialMedia.map((item) => {
+            return (
+              <>
+                <Col>
+                  <SkillsRow
+                    title={item.title}
+                    icon={item.icon}
+                    para={item.para}
+                    background={"#f5540a"}
+                    width={"260px"}
+                    link={item.link}
+                  />
+                </Col>
+              </>
+            );
+          })}
         </Row>
         <Row className="gap-2 py-2">
           <Col lg>
             <h1 className="text-center text-lg-start">GitHub</h1>
           </Col>
 
-          <SkillsRow
-            title={contactRow[5].title}
-            icon={contactRow[5].icon}
-            link={contactRow[5].link}
-          />
+          {git.map((item) => {
+            return (
+              <>
+                <Col>
+                  <SkillsRow
+                    title={item.title}
+                    icon={item.icon}
+                    para={item.para}
+                    background={"#f5540a"}
+                    width={"260px"}
+                    link={item.link}
+                  />
+                </Col>
+              </>
+            );
+          })}
         </Row>
       </Container>
     </>

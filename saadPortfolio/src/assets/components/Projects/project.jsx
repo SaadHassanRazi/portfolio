@@ -1,180 +1,100 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/esm/Container";
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import SnapMod from '../img/snapchat-mod-apk.jpg'
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import { useState } from 'react';
-import Taclog from '../img/taclog-moving.jpg'
-import IBenefits from '../img/ibenefits.jpg'
-import Carousel from 'react-bootstrap/Carousel';
-import SnapSecondSlide from '../img/snapchat-mod-second.jpg'
-import SnapThirdSlide from '../img/snapchat-mod-third.jpg'
-import SnapFourthSlide from '../img/snapchat-mod-fourth.jpg'
-const Project = ()=>{
-    const [show, setShow] = useState(false);
+import SnapMod from "../img/snapchat-mod-apk.jpg";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import { useState } from "react";
+import Taclog from "../img/taclog-moving.jpg";
+import IBenefits from "../img/ibenefits.jpg";
+import Carousel from "react-bootstrap/Carousel";
+import SnapSecondSlide from "../img/snapchat-mod-second.jpg";
+import SnapThirdSlide from "../img/snapchat-mod-third.jpg";
+import SnapFourthSlide from "../img/snapchat-mod-fourth.jpg";
+import SkillsRow from "../Skills/skillsRow";
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+const Project = () => {
+  const dataset = [
+    {
+      name: "React Calculator",
+      url: "https://github.com/SaadHassanRazi/react-Calculator.git",
+    },
+    {
+      name: "React Crud Operations",
+      url: "https://github.com/SaadHassanRazi/crud-operations-react.git",
+    },
+    {
+      name: "Reactgram",
+      url: "https://github.com/SaadHassanRazi/reactgram-offical.git",
+    },
+    {
+      name: "TodoList",
+      url: "",
+    },
+    {
+      name: "Role Based Authentication",
+      url: "",
+    },
+    {
+      name: "Newsletter",
+      url: "",
+    },
+    {
+      name: "Number Guessing Game",
+      url: "",
+    },
+    {
+      name: "Snake Game",
+      url: "https://github.com/SaadHassanRazi/Javascript-snake-game.git",
+    },
+    {
+      name: "Portfolio Template",
+      url: "https://github.com/SaadHassanRazi/Portfolio-Template.git",
+    },
+  ];
 
-  const handleClose1 = () => setShow(false);
-  const handleShow1 = () => setShow(true);
+  // Function to split the dataset into chunks of 3 items each
+  const chunkArray = (array, chunkSize) => {
+    const result = [];
+    for (let i = 0; i < array.length; i += chunkSize) {
+      result.push(array.slice(i, i + chunkSize));
+    }
+    return result;
+  };
 
-  const handleClose2 = () => setShow(false);
-  const handleShow2 = () => setShow(true);
-    return(
-        <>
-        {/*Modal */}
-      <Modal className="modal modal-lg" show={show} onHide={handleClose}>
-        <Modal.Header style={{background:'linear-gradient(124deg, #f5540a  70%, white 30%)'}} closeButton>
-          <Modal.Title className="text-white">Snapchat-mod-apk</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="bg-dark">
-        <Carousel fade>
-      <Carousel.Item>
-      <img src={SnapMod} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-        
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={SnapSecondSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-        
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={SnapThirdSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={SnapFourthSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-        </Modal.Body>
-        <Modal.Footer className="">
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-      {/*Modal 2 */}
-      <Modal className="modal modal-lg" show={show} onHide={handleClose1}>
-        <Modal.Header style={{background:'linear-gradient(124deg, #f5540a  70%, white 30%)'}} closeButton>
-          <Modal.Title className="text-white">Snapchat-mod-apk</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="bg-dark">
-        <Carousel fade>
-      <Carousel.Item>
-      <img src={SnapMod} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-        
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={SnapSecondSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-        
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={SnapThirdSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={SnapFourthSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-        </Modal.Body>
-        <Modal.Footer className="">
-          <Button variant="secondary" onClick={handleClose1}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-      <Modal className="modal modal-lg" show={show} onHide={handleClose2}>
-        <Modal.Header style={{background:'linear-gradient(124deg, #f5540a  70%, white 30%)'}} closeButton>
-          <Modal.Title className="text-white">Snapchat-mod-apk</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="bg-dark">
-        <Carousel fade>
-      <Carousel.Item>
-      <img src={SnapMod} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-        
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={SnapSecondSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-        
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={SnapThirdSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={SnapFourthSlide} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-        </Modal.Body>
-        <Modal.Footer className="">
-          <Button variant="secondary" onClick={handleClose2}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-        <Container className="py-5 text-white" id="projects">
-            <h1 className="text-center pb-3">
-                My Projects
-            </h1>
-            <Row>
-               
-            <Col lg>
-            <div className="mx-auto py-2">
-                <img src={SnapMod} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-                </div>
-                <Button className='d-flex mx-auto' onClick={handleShow} variant="primary">
-                    Show
-                </Button>
+  const chunkedDataset = chunkArray(dataset, 3);
+
+  return (
+    <>
+      <div
+        className="py-3"
+        style={{
+          background: "linear-gradient(#f5540a 70%,124deg, #000000 30%)",
+        }}
+      >
+        <div className="container text-center text-white">
+          <h2>Projects</h2>
+          <p>Click on the project to get the source code</p>
+          {chunkedDataset.map((row, rowIndex) => (
+            <Row key={rowIndex} className="mb-4 ">
+              {row.map((item, colIndex) => (
+                <Col key={colIndex}>
+                  <SkillsRow
+                    width={"200px"}
+                    height={"60px"}
+                    title={item.name}
+                    link={item.url}
+                    background={"purple"}
+                  />
                 </Col>
-                <Col lg>
-                <div className="mx-auto py-2">
-                <img src={Taclog} className="img-fluid rounded d-flex mx-auto w-75" alt="" />
-                </div>
-                <Button className='d-flex mx-auto' onClick={handleShow1} variant="primary">
-                    Show
-                </Button>
-                </Col>
-                <Col lg>
-                <div className="mx-auto py-2">
-                <img src={IBenefits} className="img-fluid rounded  d-flex mx-auto w-75" alt="" />
-                </div>
-                <Button className='d-flex mx-auto' onClick={handleShow2} variant="primary">
-                    Show
-                </Button>
-                </Col>
+              ))}
             </Row>
-        </Container>
-        </>
-    )
-}
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Project
+export default Project;
