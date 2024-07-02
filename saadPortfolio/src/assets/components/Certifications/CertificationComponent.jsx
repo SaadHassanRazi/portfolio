@@ -9,10 +9,13 @@ const CertificationComponent = (props) => {
           src={props.image}
           alt="Card image cap"
         />
-        <div class="card-body rounded text-center text-white" style={{ background: "#f5540a" }}>
+        <div
+          class="card-body rounded text-center text-white"
+          style={{ background: "#f5540a" }}
+        >
           <h5 class="card-title">{props.title}</h5>
           <p class="card-text">{props.text}</p>
-          <a href={props.link} class="btn btn-primary">
+          <a href={props.link} target="_blank" class="btn btn-primary">
             Verification
           </a>
         </div>
