@@ -3,7 +3,7 @@ import React from "react";
 const CertificationComponent = (props) => {
   return (
     <div>
-      <div class="card rounded" style={{ width: "18rem" }}>
+      <div class="card rounded shadow mx-auto" style={{ width: "18rem" }}>
         <img
           class="card-img-top img-fluid w-75 mx-auto d-flex"
           src={props.image}
