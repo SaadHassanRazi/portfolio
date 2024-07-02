@@ -97,6 +97,7 @@ const Contact = () => {
         <Row className="gap-2 py-2">
           <Col lg>
             <h1 className="text-center text-lg-start">GitHub</h1>
+            <p>Link to My Github</p>
           </Col>
 
           {git.map((item) => {
