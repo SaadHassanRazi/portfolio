@@ -42,7 +42,9 @@ const Certfications = () => {
   ];
   return (
     <div className="container">
-      <h1 className="text-center">Certifications</h1>
+      <h1 className="text-center" id="certification">
+        Certifications
+      </h1>
       <div className="row">
         <div className="col"></div>
       </div>
@@ -52,7 +54,6 @@ const Certfications = () => {
             <>
               <div className="col m-auto my-2">
                 <CertificationComponent
-                
                   title={item.title}
                   image={item.image}
                   link={item.link}
