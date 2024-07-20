@@ -43,6 +43,10 @@ const Skills = () => {
       title: "DataEntry",
       icon: <i className="bi bi-clipboard-data h1 mx-auto pt-1"></i>,
     },
+    {
+      title: "Data Annotation",
+      icon: <i className="bi bi-clipboard-data h1 mx-auto pt-1"></i>,
+    },
   ];
 
   // Split rows into chunks of 4 for rendering in rows
