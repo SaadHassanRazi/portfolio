@@ -52,6 +52,10 @@ const Project = () => {
       name: "Portfolio Template",
       url: "https://github.com/SaadHassanRazi/Portfolio-Template.git",
     },
+    {
+      name: "Chat Application",
+      url: "https://github.com/SaadHassanRazi/chat-application.git",
+    },
   ];
 
   // Function to split the dataset into chunks of 3 items each
@@ -73,7 +77,7 @@ const Project = () => {
           background: "linear-gradient(#f5540a 70%,124deg, #000000 30%)",
         }}
       >
-        <div className="container text-center text-white">
+        <div className="container text-center  text-white">
           <h2>Projects</h2>
           <p>Click on the project to get the source code</p>
           {chunkedDataset.map((row, rowIndex) => (
@@ -85,7 +89,9 @@ const Project = () => {
                     height={"60px"}
                     title={item.name}
                     link={item.url}
-                    background={"purple"}
+                    background={
+                      "linear-gradient(124deg, #000000  30%, purple  70%)"
+                    }
                   />
                 </Col>
               ))}

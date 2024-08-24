@@ -47,6 +47,10 @@ const Skills = () => {
       title: "Data Annotation",
       icon: <i className="bi bi-clipboard-data h1 mx-auto pt-1"></i>,
     },
+    {
+      title: "Stream Io",
+      icon: <i class="bi bi-app h1 mx-auto pt-1"></i>,
+    },
   ];
 
   // Split rows into chunks of 4 for rendering in rows
@@ -77,7 +81,7 @@ const Skills = () => {
               <Col lg key={itemIndex}>
                 <SkillsRow
                   title={item.title}
-                  background={"#f5540a"}
+                  background={"linear-gradient(124deg, #000000  30%, #f5540a  70%)"}
                   width={"200px"}
                   icon={item.icon}
                 />

@@ -5,7 +5,7 @@ const SkillsRow = (props) => {
   return (
     <>
       <Col
-        className="rounded text-white skillCol my-2 m-auto "
+        className="rounded text-white skillCol my-2 m-auto"
         style={{
           width: props.width,
           height: props.height,
