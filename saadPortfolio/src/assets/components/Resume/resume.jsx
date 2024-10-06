@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/esm/Container";
 import Button from "react-bootstrap/Button";
 import ResumeUndraw from "../img/undraw/undraw_resume_re_hkth.svg";
-const CV = "https://saadhassanrazi.github.io/portfolio/SaadHassanRazi.pdf";
+const CV = "https://saadhassanrazi.github.io/portfolio/SaadHassanRazi-Cv.pdf";
 
 const Resume = () => {
   const handleDownload = (url) => {
