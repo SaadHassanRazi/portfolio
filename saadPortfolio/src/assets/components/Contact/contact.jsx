@@ -60,7 +60,9 @@ const Contact = () => {
                     title={item.title}
                     icon={item.icon}
                     para={item.para}
-                    background={"#f5540a"}
+                    background={
+                      " linear-gradient(124deg, #f5540a  70%, #000000 30%)"
+                    }
                     width={"260px"}
                   />
                 </Col>
@@ -85,9 +87,11 @@ const Contact = () => {
                     title={item.title}
                     icon={item.icon}
                     para={item.para}
-                    background={"#f5540a"}
                     width={"260px"}
                     link={item.link}
+                    background={
+                      " linear-gradient(124deg, #f5540a  70%, #000000 30%)"
+                    }
                   />
                 </Col>
               </>
@@ -108,9 +112,11 @@ const Contact = () => {
                     title={item.title}
                     icon={item.icon}
                     para={item.para}
-                    background={"#f5540a"}
                     width={"260px"}
                     link={item.link}
+                    background={
+                      " linear-gradient(124deg, #f5540a  70%, #000000 30%)"
+                    }
                   />
                 </Col>
               </>

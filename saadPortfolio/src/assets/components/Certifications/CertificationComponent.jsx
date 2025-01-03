@@ -14,7 +14,9 @@ const CertificationComponent = (props) => {
         />
         <div
           class="card-body rounded text-center text-white"
-          style={{ background: "#f5540a" }}
+          style={{
+            background: " linear-gradient(124deg, #f5540a  70%, #000000 30%)",
+          }}
         >
           <h5 class="card-title">{props.title}</h5>
           <p class="card-text">{props.text}</p>

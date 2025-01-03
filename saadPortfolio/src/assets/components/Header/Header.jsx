@@ -9,7 +9,7 @@ const Header = () => {
     <>
       <div
         className=""
-        style={{ background: "linear-gradient(rgb(255, 70, 147), black" }}
+        style={{ background: "linear-gradient(#f5540a, black" }}
       >
         <Container id="brand">
           <div className="py-3"></div>

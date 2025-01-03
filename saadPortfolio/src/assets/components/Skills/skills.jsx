@@ -24,6 +24,10 @@ const Skills = () => {
       icon: <i className="bi bi-filetype-jsx mx-auto pt-1 h1"></i>,
     },
     {
+      title: "Angular",
+      icon: <i class="fa-brands fa-angular mx-auto h1 pt-1"></i>,
+    },
+    {
       title: "Redux",
       icon: <i className="bi bi-filetype-jsx mx-auto pt-1 h1"></i>,
     },
@@ -50,10 +54,6 @@ const Skills = () => {
     {
       title: "Stream Io",
       icon: <i class="bi bi-app h1 mx-auto pt-1"></i>,
-    },
-    {
-      title: "Angular",
-      icon: <i class="fa-brands fa-angular mx-auto h1 pt-1"></i>,
     },
   ];
 

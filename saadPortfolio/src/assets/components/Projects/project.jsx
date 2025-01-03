@@ -90,7 +90,7 @@ const Project = () => {
                     title={item.name}
                     link={item.url}
                     background={
-                      "linear-gradient(124deg, #000000  30%, purple  70%)"
+                      " linear-gradient(124deg, #f5540a  70%, #000000 30%)"
                     }
                   />
                 </Col>
