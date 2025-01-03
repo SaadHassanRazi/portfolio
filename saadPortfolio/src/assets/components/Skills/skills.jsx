@@ -51,6 +51,10 @@ const Skills = () => {
       title: "Stream Io",
       icon: <i class="bi bi-app h1 mx-auto pt-1"></i>,
     },
+    {
+      title: "Angular",
+      icon: <i class="fa-brands fa-angular mx-auto h1 pt-1"></i>,
+    },
   ];
 
   // Split rows into chunks of 4 for rendering in rows
@@ -81,7 +85,9 @@ const Skills = () => {
               <Col lg key={itemIndex}>
                 <SkillsRow
                   title={item.title}
-                  background={"linear-gradient(124deg, #000000  30%, #f5540a  70%)"}
+                  background={
+                    "linear-gradient(124deg, #000000  30%, #f5540a  70%)"
+                  }
                   width={"200px"}
                   icon={item.icon}
                 />

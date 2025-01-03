@@ -6,12 +6,12 @@ import SkillsRow from "../Skills/skillsRow";
 const Contact = () => {
   const contactRow = [
     {
-      title: "  Phone  ",
+      title: "  Phone:  ",
       icon: <i class="bi bi-telephone mx-auto h1 pt-1"></i>,
       para: " +92 0309-5722806",
     },
     {
-      title: "  Email    ",
+      title: "  Email:    ",
       icon: <i class="bi bi-envelope h1 mx-auto h1 pt-1"></i>,
       para: "  saadhassanrazi@gmail.com",
     },
