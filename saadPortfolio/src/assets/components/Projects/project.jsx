@@ -1,17 +1,6 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import SnapMod from "../img/snapchat-mod-apk.jpg";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import { useState } from "react";
-import Taclog from "../img/taclog-moving.jpg";
-import IBenefits from "../img/ibenefits.jpg";
-import Carousel from "react-bootstrap/Carousel";
-import SnapSecondSlide from "../img/snapchat-mod-second.jpg";
-import SnapThirdSlide from "../img/snapchat-mod-third.jpg";
-import SnapFourthSlide from "../img/snapchat-mod-fourth.jpg";
 import SkillsRow from "../Skills/skillsRow";
 
 const Project = () => {
@@ -21,8 +10,20 @@ const Project = () => {
       url: "https://github.com/SaadHassanRazi/react-Calculator.git",
     },
     {
+      name: "Angular Tic Tac Toe Game",
+      url: "https://github.com/SaadHassanRazi/angular-tictactoe.git",
+    },
+    {
+      name: "Angular Sudoku game",
+      url: "https://github.com/SaadHassanRazi/sudoko-game.git",
+    },
+    {
       name: "React Crud Operations",
       url: "https://github.com/SaadHassanRazi/crud-operations-react.git",
+    },
+    {
+      name: "Clean Website Figma Design",
+      url: "https://github.com/SaadHassanRazi/clean-figma-design.git",
     },
     {
       name: "Reactgram",
@@ -30,19 +31,19 @@ const Project = () => {
     },
     {
       name: "TodoList",
-      url: "",
+      url: "https://github.com/SaadHassanRazi/todolist-reactjs.git",
     },
     {
       name: "Role Based Authentication",
-      url: "",
+      url: "https://github.com/SaadHassanRazi/role-based-authentication.git",
     },
     {
       name: "Newsletter",
-      url: "",
+      url: "https://github.com/SaadHassanRazi/news-letter.git",
     },
     {
       name: "Number Guessing Game",
-      url: "",
+      url: "https://github.com/SaadHassanRazi/Number_guessing_game.git",
     },
     {
       name: "Snake Game",
