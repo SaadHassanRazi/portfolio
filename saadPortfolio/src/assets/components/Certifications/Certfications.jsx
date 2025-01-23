@@ -52,7 +52,7 @@ const Certfications = () => {
         {dataset.map((item) => {
           return (
             <>
-              <div className="col m-auto my-2">
+              <div className="col col-lg-4  m-auto my-2">
                 <CertificationComponent
                   title={item.title}
                   image={item.image}
