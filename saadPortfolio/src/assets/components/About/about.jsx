@@ -15,7 +15,7 @@ const About = () => {
           <Col className="my-auto" lg>
             <h1 className="text-center">About Me</h1>
             <p className="" style={{ textAlign: "justify" }}>
-              I am a passionate front-end developer with [2] years of experience
+              I am a passionate front-end developer with years of experience
               creating user-friendly and visually appealing websites. I
               specialize in and I'm dedicated to delivering responsive and
               optimized web solutions.
@@ -37,9 +37,8 @@ const About = () => {
                   className=""
                   style={{ textAlign: "justify", wordWrap: "break-word" }}
                 >
-                  I've got a 2 year Working Experience in Code In Bracket
-                  Software House and Currently working as a Frontend Developer
-                  in Enigmatix
+                  I have 3 years of experience working at Code In Bracket
+                  Software House and as a Frontend Developer at Enigmatix.
                 </p>
               </Col>
             </Row>

@@ -6,8 +6,14 @@ import CertificationComponent from "./CertificationComponent";
 import BootstrapCertification from "../img/developing-websites-and-front-ends-with-bootstrap.png";
 import GitCertification from "../img/git-and-github-essentials.1.png";
 import HtmlCertification from "../img/Coursera 56QPC4UPCC7Q_page-0001.jpg";
+import LearnReactCertification from "../img/coursera-learn-react.jpg";
 const Certfications = () => {
   const dataset = [
+    {
+      image: LearnReactCertification,
+      link: "https://www.coursera.org/account/accomplishments/verify/RD5A5G9J7HAT",
+      title: "React Js Certification",
+    },
     {
       image: ReactCertification,
       link: "https://www.coursera.org/account/accomplishments/verify/RD5A5G9J7HAT",
@@ -52,7 +58,7 @@ const Certfications = () => {
         {dataset.map((item) => {
           return (
             <>
-              <div className="col col-lg-4  m-auto my-2">
+              <div className="col col-lg-4  m-auto my-2" id="certifications">
                 <CertificationComponent
                   title={item.title}
                   image={item.image}

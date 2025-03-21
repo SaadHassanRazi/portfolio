@@ -16,7 +16,7 @@ const Header = () => {
           <Row className="mx-auto py-5">
             <Col className="my-auto text-white text-center text-lg-start" lg>
               <h1 className="">Saad Hassan Razi</h1>
-              <p className="">Front end Web Developer</p>
+              <p className="">Web Developer</p>
               <Button
                 variant="outline-danger"
                 href="#contact"

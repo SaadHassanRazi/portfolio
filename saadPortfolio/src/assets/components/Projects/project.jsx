@@ -78,7 +78,7 @@ const Project = () => {
           background: "linear-gradient(#f5540a 70%,124deg, #000000 30%)",
         }}
       >
-        <div className="container text-center  text-white">
+        <div className="container text-center  text-white" id="projects">
           <h2>Projects</h2>
           <p>Click on the project to get the source code</p>
           {chunkedDataset.map((row, rowIndex) => (
