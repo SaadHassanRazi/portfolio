@@ -51,14 +51,11 @@ const Certfications = () => {
       <h1 className="text-center" id="certification">
         Certifications
       </h1>
-      <div className="row">
-        <div className="col"></div>
-      </div>
-      <div className="row">
+      <div className="row" data-aos="fade-up">
         {dataset.map((item) => {
           return (
             <>
-              <div className="col col-lg-4  m-auto my-2" id="certifications">
+              <div className="col col-lg-4  m-auto my-2">
                 <CertificationComponent
                   title={item.title}
                   image={item.image}

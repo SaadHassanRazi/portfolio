@@ -42,8 +42,12 @@ const Home = () => {
 
             <Project />
           </div>
-          <Certfications />
-          <Contact />
+          <div data-aos="fade-up">
+            <Certfications />
+          </div>
+          <div data-aos="fade-up">
+            <Contact />
+          </div>
         </>
       )}
     </>

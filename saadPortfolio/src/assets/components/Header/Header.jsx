@@ -9,11 +9,17 @@ const Header = () => {
     <>
       <div
         className=""
-        style={{ background: "linear-gradient(#f5540a, black" }}
+        style={{
+          background: "linear-gradient(#f5540a, black",
+        }}
       >
-        <Container id="brand">
-          <div className="py-3"></div>
-          <Row className="mx-auto py-5">
+        <Container
+          id="brand"
+          style={{ minHeight: "100vh" }}
+          className="d-flex justify-content-center align-items-center"
+        >
+          <div className="flex"></div>
+          <Row className="mx-auto py-5" data-aos="fade-up">
             <Col className="my-auto text-white text-center text-lg-start" lg>
               <h1 className="">Saad Hassan Razi</h1>
               <p className="">Web Developer</p>

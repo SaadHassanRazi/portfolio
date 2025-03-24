@@ -80,7 +80,7 @@ const Skills = () => {
           </p>
         </Col>
         {chunkedRows.map((chunk, rowIndex) => (
-          <Row key={rowIndex} className="gap-2">
+          <Row key={rowIndex} className="gap-2" data-aos="fade-up"  >
             {chunk.map((item, itemIndex) => (
               <Col lg key={itemIndex}>
                 <SkillsRow

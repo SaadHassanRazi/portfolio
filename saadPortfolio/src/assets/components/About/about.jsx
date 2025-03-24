@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import AboutPic from "../img/undraw/undraw_about_me_re_82bv.svg";
@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <Container className="text-white" id="about">
-        <Row className="mx-auto py-5">
+        <Row className="mx-auto py-5" data-aos="fade-up">
           <Col className="py-5 py-lg-0" lg>
             <img className="img-fluid" src={AboutPic} alt="" />
           </Col>

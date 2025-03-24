@@ -23,7 +23,7 @@ const Resume = () => {
   return (
     <>
       <Container className="text-white py-3" id="resume">
-        <Row>
+        <Row data-aos="fade-up">
           <Col className="my-auto text-center text-lg-start py-3" lg>
             <h2>Download My Resume From Here</h2>
           </Col>
